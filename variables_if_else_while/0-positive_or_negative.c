@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* Assigning a random number to the variable n*/
+/**
+ * Assigning a random number to the variable n*/
 int main(void)
 {
 	int n;
@@ -11,11 +12,14 @@ int main(void)
 
 	if(n>0)
 	{
-		printf("n>0")("%d is positive\n");
+			printf("%d is positive\n", n);
 	}
-		else if("n=0")}("%d is zero\n");{
+		else if("n=0")}
+
+			printf("%d is zero\n");{
 	{
-		else if("n<0")("%d is negative\n");}
+		else 
+			printf("%d is negative\n");}
 
 	return 0;
 }

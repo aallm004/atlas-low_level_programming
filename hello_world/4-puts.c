@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main()
+gcc -o
 {
 //Using puts to print a message	
 int puts(const char* Programming is like building a multilingual puzzle);

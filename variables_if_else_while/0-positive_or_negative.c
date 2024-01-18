@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Assigning a random number to the variable n*/
+ * Assigning a random number to the variable n
+ */
 int main(void)
 {
 	int n;

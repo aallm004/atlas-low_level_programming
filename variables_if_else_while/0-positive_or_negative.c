@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * n - Displays whether random number is pos, neg, or zero
+ * main - Displays whether random number is pos, neg, or zero
  *
  * Return: 0 (always success)
  */

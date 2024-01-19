@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * int_islower - return non-zero if c is a lowercase letter; otherwise, they shall return 0.
+ * _islower - return non-zero if c is a lowercase letter; otherwise, they shall return 0.
  *
  * Return: 0 (always success)
  */
-int_islower(int c);
+int _islower(int c);
 
 {
 

@@ -11,11 +11,9 @@ int main(void)
 
 	while (alphabet <= 'z')
 	
-	if (alphabet != 'e' || alphabet != 'q') {
-		continue;
-	}
-	{
-		putchar(alphabet);
+		if (alphabet != 'e' || alphabet != 'q') {
+			putchar(alphabet);
+		}
 		alphabet++;
 	}
 

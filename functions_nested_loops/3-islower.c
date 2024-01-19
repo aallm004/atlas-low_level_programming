@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - return non-zero if c is a lowercase letter;
+ * _islower - Return non-zero if c is a lowercase letter;
  *
  * Return: 0 (always success)
  */

@@ -4,10 +4,8 @@
  *
  * Return: 0 (always success)
  */
-int _islower(int c);
-
+int _islower(int c)
 {
-
 	if (c >= 'a' && c <= 'z')
 		{
 			return(1);

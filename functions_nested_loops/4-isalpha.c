@@ -14,4 +14,4 @@ int _isalpha(int c)
 		printf("%c is not an alphabetic character.\n", testChar);
 
 	return (0);
-}
+

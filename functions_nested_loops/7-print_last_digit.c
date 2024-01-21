@@ -5,17 +5,20 @@
  * Return: 0 (always success)
  */
 
+#include "main.h"
+/**
+ * print_last_digit - Write a function that prints the last digit of a number.
+ *
+ * Return: 0 (always success)
+ */
+
 int print_last_digit(int a)
 {
-	if (a >= 0 && a <= 9)
-	{
-		printf("%d%d\n", a, a);
-		return 0;
-	}
-	else
-	{
-		a = a % 10;
-		printf("%d%d\n", a, a);
-		return 0;
-	}
+        if (a >= 0 && a <= 9)
+                return a;
+        else
+        {
+                a = a % 10;
+                return a;
+        }
 }

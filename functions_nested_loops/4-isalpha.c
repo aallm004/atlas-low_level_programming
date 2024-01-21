@@ -1,15 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
-/**
- * _isalpha - Checks whether a character is an alphabet or not.
- * @c: The character to check.
- *
- * Return: 0 (always success error: C++ style comments are not allowed in ISO C90 [-Werror]
-   26 |     char input;  // Declare input here
-      |                  ^)
- */
-#include "main.h"
 
 /**
  * _isalpha - Checks if a character is alphabetic.

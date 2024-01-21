@@ -5,9 +5,9 @@
  * Return: 0 (always success)
  */
 
-int print_last_digit(int);
+int print_last_digit(int)
 {
-	if (a>= 0 && a <= 9)
+	if (a >= 0 && a <= 9)
 	reutrn (a):
 
 	else

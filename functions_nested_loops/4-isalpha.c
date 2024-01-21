@@ -5,29 +5,23 @@
  * _isalpha - Checks whether a character is an alphabet or not.
  * @c: The character to check.
  *
- * Return: 1 if c is an alphabetic character, 0 otherwise.
+ * Return: 0 (always success error: C++ style comments are not allowed in ISO C90 [-Werror]
+   26 |     char input;  // Declare input here
+      |                  ^)
+ */
+#include "main.h"
+
+/**
+ * _isalpha - Checks if a character is alphabetic.
+ * @c: The character to be checked.
+ *
+ * Return: 1 if character is letter, lowercase or uppercase, 0 otherwise.
  */
 int _isalpha(int c)
 {
-    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-    {
-        printf("%c is an alphabetic character.\n", c);
-        return 1;
-    }
-    else
-    {
-        printf("%c is not an alphabetic character.\n", c);
-        return 0;
-    }
-}
-
-int main(void)
-{
-    char input;  // Declare input here
-    printf("Enter a character: ");
-    scanf("%c", &input);
-
-    _isalpha(input);
-
-    return 0;
+	if ((c >= 'a' && c <= 'z') ||
+	    (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }

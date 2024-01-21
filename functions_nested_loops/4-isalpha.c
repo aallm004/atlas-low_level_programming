@@ -1,17 +1,20 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
  * _isaplha - Checks whether a character is an alphabet or not.
  *
  * Return: 0 (always success)
  */
+#include <stdio.h>
 int _isalpha(int c)
 {
-	char testChar = 'A';
+	char c;
+	printf("c");
+	scanf(%c, &c);
 
-	if (_isalpha(testChar))
-		printf("%c is an alphabetic character.\n", testChar);
+	if ((c >= 'a' && c <= 'z') || (c>= 'A' && c<= 'Z'))
+		printf("%c is an alphabetic character.", c);
 	else
-		printf("%c is not an alphabetic character.\n", testChar);
+		printf("%c is not an alphabetic character.", c);
 
 	return (0);
-
+}

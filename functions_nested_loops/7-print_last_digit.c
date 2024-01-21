@@ -8,10 +8,14 @@
 int print_last_digit(int a)
 {
 	if (a >= 0 && a <= 9)
-		return a;
+	{
+		printf("%d%d\n", a, a);
+		return 0;
+	}
 	else
 	{
 		a = a % 10;
-		return a;
+		printf("%d%d\n", a, a);
+		return 0;
 	}
 }

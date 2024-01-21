@@ -23,6 +23,7 @@ int _isalpha(int c)
 
 int main(void)
 {
+    char input;  // Declare input here
     printf("Enter a character: ");
     scanf("%c", &input);
 

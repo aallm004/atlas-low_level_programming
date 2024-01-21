@@ -5,7 +5,7 @@
  * Return: 0 (always success)
  */
 
-int print_last_digit(int a)
+int print_last_digit(int n)
 {
         n %= 10;
 	if (n < 0)

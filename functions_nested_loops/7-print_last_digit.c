@@ -8,7 +8,7 @@
 int print_last_digit(int)
 {
 	if (a >= 0 && a <= 9)
-	reutrn (a):
+	return (a):
 
 	else
 	{

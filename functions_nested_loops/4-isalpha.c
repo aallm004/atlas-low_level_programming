@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include "main.h"
 /**
  * _isaplha - Checks whether a character is an alphabet or not.
  *

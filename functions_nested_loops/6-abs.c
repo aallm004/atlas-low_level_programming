@@ -8,7 +8,7 @@
 
 int abs(int)
 {
-	if (n > 1)
+	if (n > 0)
 		return (n);
 
 	else

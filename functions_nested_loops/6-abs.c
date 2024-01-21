@@ -6,7 +6,7 @@
  * Return: 0 (always success)
  */
 
-int abs(int)
+int abs(int n)
 {
 	if (n > 0)
 		return (n);

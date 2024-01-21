@@ -24,5 +24,5 @@ int print_sign(int n);
 		test = -1;
 		_putchar('_');
 	}
-	return (0);
+	return (test);
 }

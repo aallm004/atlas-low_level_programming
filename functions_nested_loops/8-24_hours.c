@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - Write function that prints every minute of every day from 00:00 to 23:59
+ * jack_bauer - Write function that prints every minute of every day
  *
  * Return: 0 (always success)
  */

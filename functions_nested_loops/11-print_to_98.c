@@ -3,6 +3,10 @@
 /**
  * print_to_98 - print all natural numbers from n to 98
  *
+ * @n: starting number
+ *
+ *Description: Prints all natural numbers from the given number @n to 98.
+ *
  * Return: 0 (always success)
  */
 

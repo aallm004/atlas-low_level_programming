@@ -5,11 +5,11 @@
  * Return: 0 (always success)
  */
 
-int add(int i, int k);
+int add(int a, int b);
 {
 	int c;
 
-	c = i + k;
+	c = a + b;
 
 	return (c);
 }

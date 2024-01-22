@@ -5,7 +5,11 @@
  * Return: 0 (always success)
  */
 
-int add(int a, int b);
+int add(int a, int b)
 {
-	return (a + b);
+	int c;
+
+	c = a + b;
+
+	return (c)
 }

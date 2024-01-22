@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - Write function that prints every minute of every day
+ * jack_bauer - Prints every minute of every day in HH:MM format.
  *
  * Return: 0 (always success)
  */

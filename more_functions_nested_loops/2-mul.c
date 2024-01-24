@@ -4,6 +4,10 @@
  *
  * Description: function that multiplies two integers.
  *
+ * @a: int
+ * @b: int
+ * @*: multiply
+ *
  * Return 0: a*b
  */
 

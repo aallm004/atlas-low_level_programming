@@ -7,7 +7,7 @@
 
 void print_line(int n)
 {
-	l m n o p 12 13 14 15 16
+	l, m, n, o, p 12, 13, 14, 15, 16
 		if (l > 10)
 		{
 			_putchar(_)

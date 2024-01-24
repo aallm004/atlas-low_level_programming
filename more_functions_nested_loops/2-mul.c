@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- * int mul- Write function that multiplies two integers.
  *
  *  mul - Multiplies two integers
  * @a: int

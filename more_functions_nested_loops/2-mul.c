@@ -4,7 +4,6 @@
  *
  * Description: function that multiplies two integers.
  * mul: multiply
- * @mul: multiply
  * @a: int
  * @b: int
  * @*: multiply

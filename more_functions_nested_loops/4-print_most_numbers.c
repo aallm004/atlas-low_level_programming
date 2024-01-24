@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
+ * print_most_numbers - check the code
  *
  * Return: Always 0.
  */

@@ -28,6 +28,7 @@ void print_line(int n)
                         if (n > 10)
                         {
                         	_putchar('_');
+			}
 		}
                 for (o = 12; o <= 16; l++)
                 {
@@ -42,4 +43,5 @@ void print_line(int n)
 			{
 			_putchar('_');
                         }
+		}
 }

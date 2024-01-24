@@ -9,7 +9,7 @@
  * @b: int
  * @*: multiply
  *
- * Return 0: a*b
+ * Return: a*b
  */
 
 int mul(int a, int b)

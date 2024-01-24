@@ -5,7 +5,7 @@
  * Return: 0 (always success)
  */
 
-void print_line(int n);
+void print_line(int n)
 {
 	l m n o p 12 13 14 15 16
 		if (l > 10)

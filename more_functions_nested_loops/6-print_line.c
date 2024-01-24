@@ -38,9 +38,8 @@ void print_line(int n)
                 }
                 for (p = 12; p <= 16; l++)
                 {
-                        if (p > 10)
-                        
-                        _putchar('_');
-                        
-                }
+			if (p > 10)
+			{
+			_putchar('_');
+                        }
 }

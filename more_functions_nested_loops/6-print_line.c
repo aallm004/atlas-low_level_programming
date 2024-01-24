@@ -7,7 +7,8 @@
 
 void print_line(int n)
 {
-	int l, m, o, p
+	int l, m, o, p;
+
 		for (l = 12; l <= 16; l++)
 		{
 			if (l > 10)

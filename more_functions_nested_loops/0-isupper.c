@@ -7,7 +7,7 @@
  * Return: 0 (always success)
  */
 
-int _isupper(int c);
+int _isupper(int c)
 {
 
 	char ch = 'C';
@@ -15,10 +15,10 @@ int _isupper(int c);
 
 	if (C >= 41 && C<=90)
 
-	Return 1;
+	Return (1);
 		
 	else
 		
-	Return 0;
+	Return (0);
 }
 

@@ -3,6 +3,8 @@
 /**
  * _isdigit- check for digit 0 through 9
  *
+ * @c: The character to be checked.
+ *
  * Return: 0 (always success)
  */
 

@@ -2,6 +2,8 @@
 /**
  * print_line- draw a straight line in the terminal
  *
+ * @n : number
+ *
  * Return: 0 (always success)
  */
 

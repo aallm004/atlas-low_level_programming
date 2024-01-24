@@ -7,25 +7,39 @@
 
 void print_line(int n)
 {
-	l, m, n, o, p 12, 13, 14, 15, 16
-		if (l > 10)
+	int l, m, n, o, p
+		for (l = 12; l <= 16; l++)
 		{
-			_putchar(_)
+			if(l > 10)
+			{
+			_putchar('_')
+			}
 		}
-		if (m > 10)
-		{
-			_putchar(_)
+                for (m = 12; m <= 16; l++)
+                {
+                        if(m > 10)
+                        {
+                        _putchar('_')
+                        }
+                }
+		for (n = 12; n <= 16; l++)
+                {
+                        if(n > 10)
+                        {
+                        _putchar('_')
 		}
-		if (n > 10)
-		{
-			_putchar(_)
-		}
-		if (o > 10)
-		{
-			_putchar(_)
-		}
-		if (p > 10)
-		{
-			_putchar(_)
-		}
+                for (o = 12; o <= 16; l++)
+                {
+                        if(o > 10)
+                        {
+                        _putchar('_')
+                        }
+                }
+                for (p = 12; p <= 16; l++)
+                {
+                        if(p > 10)
+                        
+                        _putchar('_')
+                        
+                }
 }

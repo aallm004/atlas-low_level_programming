@@ -6,9 +6,9 @@
  *
  * Return: 0 (always success)
  */
-
-int _isupper(int c)
 {
+int _isupper(int c)
+
 
 	char ch = 'C';
 

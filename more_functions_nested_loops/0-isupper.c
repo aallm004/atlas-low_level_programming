@@ -13,7 +13,7 @@ int _isupper(int c);
 	char ch = 'C';
 
 
-	if (isupper(ch))
+	if (C >= 41 && C<=90)
 
 	Return 1;
 		

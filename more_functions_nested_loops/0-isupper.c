@@ -13,12 +13,13 @@ int _isupper(int c)
 	char ch = 'C';
 
 
-	if (C >= 41 && C<=90)
-
-	Return (1);
-		
+	if (C >= 41 && C <= 90)
+	{
+		Return (1);
+	}	
 	else
-		
-	Return (0);
+	{		
+		Return (0);
+	}
 }
 

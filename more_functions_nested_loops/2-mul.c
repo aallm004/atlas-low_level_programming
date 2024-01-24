@@ -2,8 +2,7 @@
 /**
  * int mul- Write function that multiplies two integers.
  *
- * Description: function that multiplies two integers.
- * mul: multiply
+ * Description: function that multiplies two integers. Mul is used to multiply
  * @a: int
  * @b: int
  * @*: multiply

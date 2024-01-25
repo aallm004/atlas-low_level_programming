@@ -2,6 +2,7 @@
 /**
  * print_diagonal- draw a diagonal line on the terminal
  *
+ * @n: for diagonal line
  * Return: Always 0
  */
 

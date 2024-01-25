@@ -15,6 +15,6 @@ _putchar('#');
 }
 _putchar('\n');
 }	
-if (i<=0)
+if (a<=0)
 _putchar ('\n');
 }

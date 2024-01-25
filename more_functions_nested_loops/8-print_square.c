@@ -5,18 +5,17 @@
  * Return: Always 0
  */
 
-void print_square(int size)
+void print_square(int size) 
 {
-	int a, b;
-	for (a = 0; a < 10; a++)
-	{
-		for (a = 1; a <= size; a++)
-		{
-			for (b = 1; b < a; b++)
-			{
-			_putchar('#');
-			}
-		}
-		_putchar ('\n');
-	}
+    if (size <= 0) {
+        _putchar('\n');
+        return;
+    }
+
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            _putchar('#');
+        }
+        _putchar('\n');
+    }
 }

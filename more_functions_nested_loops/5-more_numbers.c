@@ -18,6 +18,7 @@ void more_numbers(void)
 				_putchar ('0' + j);
 			}
 				else
+					_putchar (\n)
 		}
 	}
 }	

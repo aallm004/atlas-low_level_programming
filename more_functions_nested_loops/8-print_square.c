@@ -9,12 +9,12 @@ void print_square(int size)
 {
 	int y, a, side;
 
-	for (y = 1; y <= side; y++)
+	for (a = 1; a <= n; a++)
 	{
-		for(a = 1; a <= side; a++)
+		for (b = 1; b < a; b++)
 		{
-			_putchar('#');
-		}	
-		_putchar('\n');
+		_putchar('#');
+		}
 	}
+	_putchar ('\n');
 }

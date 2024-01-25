@@ -7,11 +7,14 @@
 void print_square(int size)
 {
         int a, b;
-	if (a >= size)
-		_putcher ('\n');
-	else
-		for(a = 0; a < size; a++)
-		{
-			_putchar ('#')
-		}
+for (a = 1; a < size; a++_
+{
+for (b = 0; j < size; b++)
+{
+_putchar('#');
+}
+_putchar('\n');
+}	
+if (i<=0)
+_putchar ('\n')
 }

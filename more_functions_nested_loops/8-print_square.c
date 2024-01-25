@@ -13,8 +13,8 @@ void print_square(int size)
 	{
 		for(a = 0; a <= side; a++)
 			{
-			_putchar('\n')
-			_putchar(' ')	
+			_putchar('\n');
+			_putchar(' ');	
 			_putchar('#');
 			}	
 		if(size <= 0)

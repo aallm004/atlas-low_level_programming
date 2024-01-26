@@ -9,11 +9,11 @@ print_triangle(int size)
 {
 	int r, c;
 
-	if (r = 5; r <= 10; r++)
+	if ((r = 5); r <= 10; r++)
 	{
-		for(c = 1; c <= 10; c++)
+		for ((c = 1); c <= 10; c++)
 		{
-			if (c >=(11-r))
+			if (c >= (11-r))
 			{
 				_putchar('#');
 			}
@@ -25,9 +25,6 @@ print_triangle(int size)
 			{	
 				_putchar('/n');
 			}
-				
-				if(col==5)
-				{
-					_putchar('#')
-				}
+		}
+	}			
 }

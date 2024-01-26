@@ -5,13 +5,13 @@
  * Return: 0
  */
 
-print_triangle(int size)
+void print_triangle(int size)
 {
 	int r, c;
 
-	if ((r = 5); r <= 10; r++)
+	for (r = 5; r <= 10; r++)
 	{
-		for ((c = 1); c <= 10; c++)
+		for (c = 1; c <= 10; c++)
 		{
 			if (c >= (11-r))
 			{
@@ -23,7 +23,7 @@ print_triangle(int size)
 			}
 
 			{	
-				_putchar('/n');
+				_putchar('\n');
 			}
 		}
 	}			

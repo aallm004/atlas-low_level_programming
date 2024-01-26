@@ -2,6 +2,7 @@
 /**
  * print_triangle- function that prints a triangle
  *
+ * @size: mystery
  * Return: 0
  */
 
@@ -9,9 +10,9 @@ void print_triangle(int size)
 {
 	int r, c;
 
-	for (r = 5; r <= 10; r++)
+	for (r = 1; r <= size; r++)
 	{
-		for (c = 1; c <= 10; c++)
+		for (c = 1; c <= size; c++)
 		{
 			if (c >= (11-r))
 			{
@@ -22,9 +23,9 @@ void print_triangle(int size)
 				_putchar(' ');
 			}
 
-			{	
+			{
 				_putchar('\n');
 			}
 		}
-	}			
+	}
 }

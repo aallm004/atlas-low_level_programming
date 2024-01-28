@@ -4,7 +4,6 @@
  * swap_int - function that swaps values of two ints
  * @a : int
  * @b : int
- * @c : int
  */
 
 void swap_int(int *a, int *b)

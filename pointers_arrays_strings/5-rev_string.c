@@ -4,6 +4,7 @@
  * print_rev - prints a string, in reverse, w new line.
  * @s : int
  * rev_string - r e v e r s e s r e v e r
+ * @x : temp
  * rev_string - going backward
  */
 

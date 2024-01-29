@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * @s : string to be reversed
+ * @s: string to be reversed
  * rev_string - going backward
  */
 

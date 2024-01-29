@@ -2,6 +2,7 @@
 
 /**
  * print_rev - prints a string, in reverse, w new line.
+ * @s : int
  */
 
 void print_rev(char *s)

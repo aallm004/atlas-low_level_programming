@@ -15,10 +15,10 @@ void puts2(char *str)
 		len++;
 	}
 
-	for (s = 0; s < len; s + 2 )
+	for (s = 0; s < len; (s + 2))
 	{
-		_putchar(str[s]
+		_putchar(str[s];
 	}
 
-	_putchar('\n')
+	_putchar('\n');
 }	

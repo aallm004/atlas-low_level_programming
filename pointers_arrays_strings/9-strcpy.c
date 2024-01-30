@@ -8,7 +8,7 @@ char *_strcpr(char *dest, char *src)
 {
 	int i, len;
 
-	for (src[len] != '\0';)
+	for (src[len] <= '\0';)
 	{
 		len++;
 	}

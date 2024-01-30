@@ -2,6 +2,8 @@
 #include <string.h>
 /**
  * _strcpy - f that copies the s pointed by src
+ * @dest: dest buff
+ * @src: source
  */
 
 char *_strcpy(char *dest, char *src)

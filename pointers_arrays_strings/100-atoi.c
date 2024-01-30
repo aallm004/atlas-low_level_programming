@@ -1,18 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - program that prints al singe digit numbers etc
+ * _atoi - convert a string to an integer
  *
- * Return: 0 (always success)
  */
 
-int main(void)
-{
-	int x;
+int _atoi(char *s)
 
-	for (x = 48; x < 58; x++)
-	{
-		putchar(x);
-	}
-	putchar('\n');
-	return (0);
-}

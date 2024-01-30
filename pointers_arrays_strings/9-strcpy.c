@@ -7,7 +7,7 @@
 
 char *_strcpr(char *dest, char *src)
 {
-	int i;
+	int i, n;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
@@ -18,5 +18,5 @@ char *_strcpr(char *dest, char *src)
 		dest[i] = '\0';
 	}
 
-		returnd dest;
+		return dest;
 }

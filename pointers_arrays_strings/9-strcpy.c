@@ -8,9 +8,9 @@ char *_strcpr(char *dest, char *src)
 {
 	int i, len;
 
-	for (src[len] != '\0')
+	for (src[len] != '\0';)
 	{
-		len++
+		len++;
 	}
 	
 	for (i = 0; i < len; i++)

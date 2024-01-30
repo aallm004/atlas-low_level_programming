@@ -6,7 +6,7 @@
 
 char *_strcpr(char *dest, char *src)
 {
-	int i, len;
+	int len;
 
 	for (len = 0; src[len] != '\0'; len++)
 	{

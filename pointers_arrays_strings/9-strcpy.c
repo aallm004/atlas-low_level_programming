@@ -4,7 +4,7 @@
  * _strcpy - f that copies the s pointed by src
  */
 
-char *_strcpr(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int len;
 

@@ -1,6 +1,5 @@
 #include "main.h"
 #include <string.h>
-
 /**
  * _strcpy - f that copies the s pointed by src
  */
@@ -13,10 +12,10 @@ char *_strcpr(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
+	
 	for (i = 0; i < n; i++)
 	{
 		dest[i] = '\0';
 	}
-
 		return dest;
 }

@@ -8,15 +8,12 @@ char *_strcpr(char *dest, char *src)
 {
 	int i, len;
 
-	for (src[len] <= '\0';)
+	for (len = 0; src[len] != '\0'; len++)
 	{
-		len++;
+		dest[len] = src[len];
 	}
-	
-	for (i = 0; i < len; i++)
-	{
-		dest[i] = '\0';
-	}
+
+	dest[len] = '\0';
+
 		return (dest);
 }
-

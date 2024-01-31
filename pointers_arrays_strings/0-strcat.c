@@ -4,6 +4,8 @@
  * _strcat - write a function that concatenates two stings
  * @dest : destination
  * @src : string
+ *
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)

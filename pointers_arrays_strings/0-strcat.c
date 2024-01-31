@@ -2,8 +2,8 @@
 
 /**
  * _strcat - write a function that concatenates two stings
- * dest: destination
- * src: string
+ * @dest : destination
+ * @src : string
  */
 
 char *_strcat(char *dest, char *src)

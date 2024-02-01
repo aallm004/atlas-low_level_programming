@@ -2,6 +2,7 @@
 
 /**
  * string_toupper - change all lwrcase char to upper
+ * @b: pointer
  */
 
 char *string_toupper(char *b)

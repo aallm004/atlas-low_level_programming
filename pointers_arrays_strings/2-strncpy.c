@@ -2,7 +2,6 @@
 #include <stddef.h>
 
 /**
- *
  * _strncpy - write a function that copies a string
  *
  * @dest : destination

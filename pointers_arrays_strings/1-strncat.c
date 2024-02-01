@@ -4,7 +4,7 @@
  * _strncat - write a function that concatenates two stings
  * @dest : destination
  * @src : string
- * @n : end 
+ * @n : end
  *
  * Return: dest
  */

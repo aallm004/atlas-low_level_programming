@@ -9,15 +9,14 @@
  * Return: dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-	int n = 0, b = 0;
+	int a = 0, n = 0;
 
 	while (*dest)
 	{
 		dest++;
 		a++;
-		n++;
 	}
 
 	while (*src)
@@ -25,10 +24,11 @@ char *_strncat(char *dest, char *src, int n)
 		*dest = *src;
 		dest++;
 		a++;
-		n++;
 		src++;
+		n++;
 	}
-	dest = (dest - n);
+	*dest = '\0';
+	dest = (dest - a);
 
 	return (dest);
 }

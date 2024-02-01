@@ -4,7 +4,7 @@
  * _strncat - write a function that concatenates two stings
  * @dest : destination
  * @src : string
- * @n : 
+ * @n : end 
  *
  * Return: dest
  */
@@ -31,7 +31,7 @@ char *_strncat(char *dest, char *src, int n)
 		break;
 		}
 	}
-		
+
 	dest = (dest - a);
 
 	return (dest);

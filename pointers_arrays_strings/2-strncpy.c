@@ -8,7 +8,7 @@
  * @src : string
  * @n : end
  *
- * Return : Always 0.
+ * Return : dest
  */
 
 char *_strncpy(char *dest, char *src, int n)

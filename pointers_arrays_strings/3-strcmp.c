@@ -3,8 +3,8 @@
 /**
  * _strcmp - function that compares two strings
  *
- * @s1 - string one
- * @s2 - string two
+ * @s1 : string one
+ * @s2 : string two
  *
  * Return: Always 0.
  */

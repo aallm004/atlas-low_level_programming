@@ -9,7 +9,7 @@
  * Return: dest
  */
 
-char *_strncat(char *dest, char *src, in n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int a = 0, b = 0;
 
@@ -27,7 +27,6 @@ char *_strncat(char *dest, char *src, in n)
 		src++;
 		b++;
 	}
-	*dest = '\0';
 	dest = (dest - a);
 
 	return (dest);

@@ -22,7 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[a] = src[b];
 
-	dest[a] = '/0'
+	dest[a] = '/0';
 
 	return (dest);
 }

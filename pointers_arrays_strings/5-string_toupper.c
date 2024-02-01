@@ -8,11 +8,11 @@ char *string_toupper(char *b)
 {
 	int i;
 
-	for (i = 0; b ;!+ '\0'; i++)
+	for (i = 0; b != '\0'; i++)
 	{
-		if (b[i] >= 'A' && b[i] <= 'Z')
-			b[i] = b[i] + 32;
+		if (b[i] >= 'a' && b[i] <= 'z')
+			b[i] = b[i] - 32;
 	}
-	return (b);
+	return (0);
 }
 	

@@ -11,7 +11,7 @@ char *cap_string(char *danny)
 		if(i == 0)
 		{
 			danny[i] -= 32;	
-		{	
+		}	
 			if(i == 0)
 			{
 				danny[i] -= 32;	
@@ -37,4 +37,5 @@ char *cap_string(char *danny)
 			danny[i] -= 32;
 			}
 			return (danny);
-		}
+	}	
+}

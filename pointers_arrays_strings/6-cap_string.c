@@ -6,9 +6,9 @@
 
 char *cap_string(char *danny)
 {
-	int i = 0;
+	int i;
 
-	for (i = 0; (danny[i] != '\0'; i++)
+	for (i = 0; danny[i] != '\0'; i++)
 	{
 		if(i == 0 && (danny[i] >= 'a' && danny[i] <= 'z'))
 		if(i == 0)

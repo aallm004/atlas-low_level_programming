@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * cap_string- funct that caps all words of string
  */
@@ -8,14 +8,11 @@ char *cap_string(char *danny)
 	for (i = 0; danny[i] != '\0'; i++)
 	{
 		if(i == 0 && (danny[i] >= 'a' && danny[i] <= 'z'))
-		if(i == 0)
 		{
-			danny[i] -= 32;	
-		}	
 			if(i == 0)
-			{
+		{
 				danny[i] -= 32;	
-			}
+		}		
 
 			else if
 			(
@@ -36,6 +33,8 @@ char *cap_string(char *danny)
 			{
 			danny[i] -= 32;
 			}
-			return (danny);
-	}	
+
+		}
+	}
+	return (danny);
 }

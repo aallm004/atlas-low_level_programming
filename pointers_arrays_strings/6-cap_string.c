@@ -32,5 +32,5 @@ char *cap_string(char *danny)
 
 		}
 	}
-	return (str);
+	return (danny);
 }

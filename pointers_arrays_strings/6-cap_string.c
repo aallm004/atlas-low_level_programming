@@ -9,7 +9,7 @@ char *cap_string(char *i)
 
 	while (i[x])
 	{
-		for (x = 0; x < 13; x++)
+		for (x = 0; x != 0; x++)
 		{
 			if (x[i] == find[x])
 			

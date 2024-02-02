@@ -10,7 +10,7 @@ char *cap_string(char *b)
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] == ' '
+		if (b[i] == ' ')
 			b[i] == ','
 			b[i] == ';'
 			b[i] == '.'

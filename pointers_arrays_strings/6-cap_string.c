@@ -13,7 +13,7 @@ char *cap_string(char *i)
 		{
 			if (x[i] == find[x])
 			
-				i[j + 1];
+				i[x + 1];
 		}
 	}
 

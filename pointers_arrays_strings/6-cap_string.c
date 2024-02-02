@@ -14,7 +14,8 @@ char *cap_string(char *danny)
 		if(i == 0)
 		{
 			danny[i] -= 32;	
-		}else if
+		}
+		else if
 
 	danny[i - 1] == ' ' ||
 	danny[i - 1] == ',' ||

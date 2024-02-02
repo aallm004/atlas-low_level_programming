@@ -4,33 +4,33 @@
  * cap_string- funct that caps all words of string
  */
 
-char *cap_string(char *b)
+char *cap_string(char *danny)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; b[i] != '\0'; i++)
+	for (i = 0; (danny[i] != '\0'; i++)
 	{
-		if (b[i] == ' ')
-			b[i] == ',';
-			b[i] == ';';
-			b[i] == '.';
-			b[i] == '!';
-			b[i] == '?';
-			b[i] == '"';
-			b[i] == '(';
-			b[i] == ')';
-			b[i] == '}';
-			b[i] == '{';
+		if(i == 0 && (danny[i] >= 'a' && danny[i] <= 'z'))
+		if(i == 0)
 		{
-			i++;
-			if (b[a] >= 'A' && b[a] <= 'Z')
-				i++;
-			else if (b[a] >= 'a' && b[a] <= 'z')
-				b[a] = b[a] - 32;
-			a--;
+			danny[i] -= 32;	
+	else if
+
+	danny[i - 1] == ' ' ||
+	danny[i - 1] == ',' ||
+	danny[i - 1] == ';' ||
+	danny[i - 1] == '.' ||
+	danny[i - 1] == '!' ||
+	danny[i - 1] == '?' ||
+	danny[i - 1] == '"' ||
+	danny[i - 1] == '(' ||
+	danny[i - 1] == ')' ||
+	danny[i - 1] == '{' ||
+	danny[i - 1] == '}' ||
+	danny[i - 1] == '\t' ||
+	danny[i - 1] == '\n' ||
+
 		}
-		else if (b[a] >= 'a' && b[a] <= 'z')
-			b[a] = b[a] - 32;
 	}
-	return (b);
+	return (str);
 }

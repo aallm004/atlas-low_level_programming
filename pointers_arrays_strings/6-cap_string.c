@@ -14,7 +14,7 @@ char *cap_string(char *danny)
 		if(i == 0)
 		{
 			danny[i] -= 32;	
-	else if
+		}else if
 
 	danny[i - 1] == ' ' ||
 	danny[i - 1] == ',' ||
@@ -30,7 +30,6 @@ char *cap_string(char *danny)
 	danny[i - 1] == '\t' ||
 	danny[i - 1] == '\n' ||
 
-		}
 	}
 	return (danny);
 }

@@ -29,8 +29,6 @@ char *cap_string(char *danny)
 	danny[i - 1] == '{' ||
 	danny[i - 1] == '}' ||
 	danny[i - 1] == '\t' ||
-	danny[i - 1] == '\n')
-
-	}
+	danny[i - 1] == '\n')}
 	return (danny);
 }

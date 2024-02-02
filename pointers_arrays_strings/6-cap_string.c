@@ -4,11 +4,18 @@
  */
 char *cap_string(char *i)
 {
-	int i = 0;
+	int x = 0;
 	char find[13] ',',';','.','!','?','\"','(',')','{','}','\t','\n',' ';
 
-	while (*i != '\0')
+	while (i[x])
 	{
-		i++
+		for (x = 0; x < 13; x++)
+		{
+			if (x[i] == find[x])
+			
+				x++;
+		}
 	}
+
+	return (i);
 }

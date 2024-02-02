@@ -1,15 +1,40 @@
-#include "main.h"
-
+include "main.h"
 /**
  * cap_string- funct that caps all words of string
  */
-
-char *cap_string(char *i)
+char *cap_string(char *danny)
 {
-	int i = 0;
-	char find[13] ',',';','.','!','?','\"','(',')','{','}','\t','\n',' ';
+	int i;
+	for (i = 0; danny[i] != '\0'; i++)
+	{
+		if(i == 0 && (danny[i] >= 'a' && danny[i] <= 'z'))
+		if(i == 0)
+		{
+			danny[i] -= 32;	
+		{	
+			if(i == 0)
+			{
+				danny[i] -= 32;	
+			}
 
-	while (*i != 0; i++)
-
-	return (i);
-}
+			else if
+			(
+			danny[i - 1] == ' ' ||
+			danny[i - 1] == ',' ||
+			danny[i - 1] == ';' ||
+			danny[i - 1] == '.' ||
+			danny[i - 1] == '!' ||
+			danny[i - 1] == '?' ||
+			danny[i - 1] == '"' ||
+			danny[i - 1] == '(' ||
+			danny[i - 1] == ')' ||
+			danny[i - 1] == '{' ||
+			danny[i - 1] == '}' ||
+			danny[i - 1] == '\t' ||
+			danny[i - 1] == '\n'
+			)
+			{
+			danny[i] -= 32;
+			}
+			return (danny);
+		}

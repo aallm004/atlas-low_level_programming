@@ -11,7 +11,7 @@ char *cap_string(char *i)
 	{
 		for (x = 0; x != 0; x++)
 		{
-			if (x[i] = find[x])
+			if (x[i] == find[x])
 			
 				x++;
 		}

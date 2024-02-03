@@ -19,7 +19,7 @@ char *cap_string(char *a)
 			else if
 			(
 			a[x - 1] == '\n' ||
-                        a[x - 1] == '\t' ||
+			a[x - 1] == '\t' ||
 			a[x - 1] == ',' ||
 			a[x - 1] == ' ' ||
 			a[x - 1] == ';' ||

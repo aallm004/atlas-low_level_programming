@@ -1,6 +1,9 @@
 #include "main.h"
 /**
  * cap_string- funct that caps all words of string
+ *@a : pointer
+ *
+ * Return: a
  */
 char *cap_string(char *a)
 {

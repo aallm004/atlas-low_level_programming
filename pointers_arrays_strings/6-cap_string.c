@@ -5,40 +5,22 @@
  *
  * Return: a
  */
-char *cap_string(char *a)
+char *cap_string(char *ptr)
 {
-	int x;
-
-	for (x = 0; a[x] != '\0'; x++)
+	int a;
+	char find[13] = " \t\n,;.!?"(){}";
+	while (*ptr)
 	{
-
-		if (a[x] >= 'a' && a[x] <= 'z')
+		for (a = 0; a < 13; a++)
 		{
-			if (x == 0)
+			if (find[a] == *ptr)
 			{
-				a[x] -= 32;
-			}
-
-			else if
-			(
-			a[x - 1] == '\n' ||
-			a[x - 1] == '\t' ||
-			a[x - 1] == ',' ||
-			a[x - 1] == ' ' ||
-			a[x - 1] == ';' ||
-			a[x - 1] == '.' ||
-			a[x - 1] == '!' ||
-			a[x - 1] == '?' ||
-			a[x - 1] == '"' ||
-			a[x - 1] == '(' ||
-			a[x - 1] == ')' ||
-			a[x - 1] == '{' ||
-			a[x - 1] == '}'
-			)
-			{
-			a[x] -= 32;
+				if ( *(ptr + 1) >= 'a' && *(ptr + 1) <= 'z')
+				{
+					*(ptr = 1) -= ('a' - 'A')
+				}
 			}
 		}
+		ptr++;
 	}
-	return (a);
 }

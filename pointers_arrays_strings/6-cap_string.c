@@ -9,7 +9,9 @@
 char *cap_string(char *ptr)
 {
 	int a;
-	char find[13] = " \t\n,;.!?\"\(\)\{\}";
+	char find[13] = " \t\n,;.!?\"(){}";
+	int howmanytimesdidwemoveit = 0;
+	
 	while (*ptr)
 	{
 		for (a = 0; a < 13; a++)
@@ -18,35 +20,13 @@ char *cap_string(char *ptr)
 			{
 				if ( *(ptr + 1) >= 'a' && *(ptr + 1) <= 'z')
 				{
-					*(ptr = 1) -= ('a' - 'A')
+					*(ptr + 1) -= ('a' - 'A');
 				}
 			}
 		}
 		ptr++;
+		ptr += howmanytimesdidwemoveit;
 	}
 
-	return (ptr - _strlen(*ptr));
+	return (ptr);
 }
-
-/**
- * _strlen - returns the length of a string
- *
- * @s : int
- *
- * Return: the length of the string
- */
-
-int _strlen(char *s)
-{
-        int x;
-
-        x = 0;
-
-        while (s[x] != '\0')
-        {
-                x++;
-        }
-
-        return (x);
-}
-

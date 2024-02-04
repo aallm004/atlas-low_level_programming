@@ -13,7 +13,7 @@ char *cap_string(char *ptr)
 	int howmanytimesdidwemoveit = 0;
 	
 	if (*ptr >= 'a' && *ptr <= 'z')
-		*(ptr + 1) -= ('a' - 'A');
+		*(ptr) -= ('a' - 'A');
 
 	while (*ptr)
 	{

@@ -25,8 +25,8 @@ char *cap_string(char *ptr)
 			}
 		}
 		ptr++;
-		ptr += howmanytimesdidwemoveit;
+		howmanytimesdidwemoveit--;
 	}
-
+	ptr += howmanytimesdidwemoveit;
 	return (ptr);
 }

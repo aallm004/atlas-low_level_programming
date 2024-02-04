@@ -12,6 +12,9 @@ char *cap_string(char *ptr)
 	char find[13] = " \t\n,;.!?\"(){}";
 	int howmanytimesdidwemoveit = 0;
 	
+	if (*ptr >= 'a' && *ptr <= 'z')
+		*(ptr + 1) -= ('a' - 'A');
+
 	while (*ptr)
 	{
 		for (a = 0; a < 13; a++)

@@ -2,6 +2,7 @@
 /**
  * cap_string- funct that caps all words of string
  *
+ *@ptr : pointer
  * Return: a
  */
 

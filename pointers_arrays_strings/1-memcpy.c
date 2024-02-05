@@ -4,7 +4,7 @@
  * _memcpy - function that copies memory area
  *
  *@dest : destination
- *@ src : source
+ *@src : source
  *@n : insigned int
  */
 

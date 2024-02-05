@@ -7,12 +7,9 @@
 
 char *leet(char *s)
 {
-	int howmanytimesdidwemoveit;
+	int howmanytimesdidwemoveit = 0;
 	char MDA[5][3] = {{'a','A','4'},{'e','E','3'},{'o','O','0'},{'t','T','7'},{'l','L','1'}};
 	int r;
-
-	if (!(*s))
-		return (s);
 
 	while(*s)
 	{

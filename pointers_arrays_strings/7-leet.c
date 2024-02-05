@@ -18,7 +18,7 @@ char *leet(char *s)
 
 	while (*s)
 	{
-		for (r=0; r <= 4; r++)
+		for (r = 0; r <= 4; r++)
 		{
 			if ((MDA[r][0] == *s) || (MDA[r][1] == *s))
 				*s = MDA[r][2];

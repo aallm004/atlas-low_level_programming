@@ -1,8 +1,7 @@
 #include "main.h"
-#include <std.io>
 
 /**
- * memset- function that fills memory with a constant byte
+ * _memset- function that fills memory with a constant byte
  *
  *@n : int
  *@b : byte

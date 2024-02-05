@@ -6,6 +6,7 @@
  *@dest : destination
  *@src : source
  *@n : insigned int
+ * Return: (d)
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)

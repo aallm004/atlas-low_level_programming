@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * leet - funct that encodes a string into 1337
- *
+ * @s : pointer
+ * Return: (s)
  */
 
 char *leet(char *s)
@@ -10,6 +11,9 @@ char *leet(char *s)
 	char MDA[5][3] = {{'a','A','4'},{'e','E','3'},{'o','O','0'},{'t','T','7'},{'l','L','1'}};
 	int r;
 
+	if (!(*s))
+		return (s);
+
 	while(*s)
 	{
 		for (r=0; r<=4; r++)
@@ -17,7 +21,7 @@ char *leet(char *s)
 			if((MDA[r][0] == *s) || (MDA[r][1] == *s))
 				*s = MDA[r][2];
 		}
-		
+
 		s++;
 		howmanytimesdidwemoveit--;
 

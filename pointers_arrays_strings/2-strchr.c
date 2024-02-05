@@ -6,7 +6,7 @@
  *
  *@c: character
  *@s: string
- *@NULL: end of string
+ *Return: s, '\0'
  */
 
 char *_strchr(char *s, char c)

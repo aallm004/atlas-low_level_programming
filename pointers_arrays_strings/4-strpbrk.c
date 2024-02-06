@@ -20,6 +20,6 @@ char *_strpbrk(char *s1, char *s2)
 			if (sc == c)
 				return ((char *)(s1 - 1));
 	}
-	return (NULL)
+	return (NULL);
 }
 

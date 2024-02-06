@@ -21,7 +21,6 @@ char *_strstr(char *string, char *substring)
 	}
 	return (string + i);
 }
-
 /**
  * _strlen - returns the length of a string
  *

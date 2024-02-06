@@ -8,7 +8,7 @@ unsigned int _strspn(char *s1, char *s2)
 	const char *s1;
 	register const char *s2;
 	{
-	register cconst char *p = s1, *spanp;
+	register const char *p = s1, *spanp;
 	register char c, sc;
 
 	c = *p++;

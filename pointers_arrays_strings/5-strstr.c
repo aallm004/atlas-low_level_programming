@@ -7,8 +7,8 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i, j, l1, l2;
 	int count = 0;
-	l1 = _strlen ( string );
-	l2 = _strlen ( substring );
+	l1 = _strlen;
+	l2 = _strlen;
 
 	for (i = 0; i < l1 - l2 + 1; i++)
 	{

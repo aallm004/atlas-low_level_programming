@@ -12,12 +12,14 @@ char *_strstr(char *string, char *substring)
 
 	for (i = 0; i < l1 - l2 + 1; i++)
 	{
-		count++;
-		i = i + l2 - 1;
+		if (strstr ( string + i, substring ) = = string + i)
+			{
+			count++;
+			i = i + l2 - 1;
+			}
 	}
+	return (count);
 }
-return (count);
-
 
 /**
  * _strlen - returns the length of a string

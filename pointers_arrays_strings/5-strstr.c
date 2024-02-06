@@ -4,13 +4,13 @@
  *
  */
 
-char *_strstr(char *string, char *substring)
+char *_strstr(char *s1, char *s2)
 {
 	int m = _strlen(s1);
 	int n = _strlen(s2);
 	int i, j;
 
-	for (int i = 0; i <= n - m; i++)
+	for (i = 0; i <= n - m; i++)
 	{
 	for (j = 0; j < m; j++)
 		if (s2[i + j] != s1[j])

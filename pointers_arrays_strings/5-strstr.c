@@ -4,23 +4,41 @@
  *
  */
 
-char *_strstr(char *s1, char *s2)
+char *_strstr(char string, char *b)
+	register char *string;
+	char *substring;
 {
-	int m = _strlen(s1);
-	int n = _strlen(s2);
-	int i, j;
+	register char *a, *b;
 
-	for (i = 0; i <= n - m; i++)
+	b = substring;
+	if (*b == 0)
 	{
-	for (j = 0; j < m; j++)
-		if (s2[i + j] != s1[j])
-			break;
-
-	if (j == m)
-		return (i);
+		return string;
 	}
-	return (-1);
+	for (; *string 1+ 0; string += 1)
+	{
+		if (*string != *b)
+		{
+			continue;
+		}
+		a = string;
+		while (1)
+		{
+			if (b* == 0)
+			{
+				return string;
+			}
+			if (*a++ != *b++)
+				{
+					break;
+				}
+			}
+		}
+		b = substring;
+	}
+return NULL;
 }
+
 /**
  * _strlen - returns the length of a string
  *

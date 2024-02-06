@@ -3,6 +3,8 @@
  * print_chessboard - write a function that prints the chessboard
  *
  * @a: pointer
+ * @col: column
+ * @row: row
  */
 
 void print_chessboard(char (*a)[8])

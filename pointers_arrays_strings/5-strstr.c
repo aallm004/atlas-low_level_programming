@@ -19,7 +19,7 @@ char *_strstr(char *string, char *substring)
 			i = i + l2 - 1;
 			}
 	}
-	return count;
+	return (char);
 }
 
 /**

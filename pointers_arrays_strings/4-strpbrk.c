@@ -9,7 +9,7 @@ char *_strpbrk(char *s1, char *s2)
 {
 
 	register const char *scanp;
-	register in c, sc;
+	register int c, sc;
 
 	while ((c = *s1++) != 0)
 	{

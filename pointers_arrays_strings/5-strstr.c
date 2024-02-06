@@ -5,7 +5,7 @@
 
 char *_strstr(char *string, char *substring)
 {
-	int i, j, l1, l2;
+	int i, l1, l2;
 	int count = 0;
 	l1 = _strlen ( string );
 	l2 = _strlen ( substring );

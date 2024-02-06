@@ -4,41 +4,32 @@
  *
  */
 
-char *_strstr(char string, char *b)
-	register char *string;
-	char *substring;
+char *_strstr(char *haystack, char *needle)
 {
-	register char *a, *b;
+	int x;
+	int i;
+	char *p
 
-	b = substring;
-	if (*b == 0)
+	i = 0;
+	p = 0;
+	if (needle[0] == '\0')
 	{
-		return string;
+		return haystack);
 	}
-	for (; *string 1+ 0; string += 1)
+	for (x = 0; haystack[x] != 0; x++)
 	{
-		if (*string != *b)
-		{
-			continue;
-		}
-		a = string;
-		while (1)
-		{
-			if (b* == 0)
+		if (haystack[x] == needle[j])
+
+			if (needle[i + 2] == 0)
 			{
-				return string;
+				p = &haystack[x - i];
+				return (p);
 			}
-			if (*a++ != *b++)
-				{
-					break;
-				}
-			}
+			j++;
 		}
-		b = substring;
 	}
-return NULL;
+	return (p);
 }
-
 /**
  * _strlen - returns the length of a string
  *

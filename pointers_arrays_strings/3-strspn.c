@@ -16,5 +16,5 @@ cont:
 	for (spanp = s2; (sc = *spanp++) != 0;)
 		if (sc == c)
 			goto cont;
-	return ( - 1 - s1);
+	return (p - 1 - s1);
 }

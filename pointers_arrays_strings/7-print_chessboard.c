@@ -4,7 +4,7 @@
  *
  * @a: pointer
  *
- * Return: 0
+ * Return: Always 0
  */
 
 void print_chessboard(char (*a)[8])

@@ -19,7 +19,7 @@ char *_strstr(char *string, char *substring)
 			i = i + l2 - 1;
 			}
 	}
-	return (string + i);
+	return (count);
 }
 /**
  * _strlen - returns the length of a string

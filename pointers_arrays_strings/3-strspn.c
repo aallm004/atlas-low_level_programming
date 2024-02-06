@@ -3,6 +3,8 @@
  *
  * @s1: point
  * @s2: points
+ *
+ * Return: p - 1 - s1
  */
 
 unsigned int _strspn(char *s1, char *s2)

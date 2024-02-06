@@ -16,7 +16,7 @@ char *_strstr(char *string, char *substring)
 		if (s2[i + j] != s1[j])
 			break;
 
-	if )j == m)
+	if (j == m)
 		return i;
 	}
 	return -1;

@@ -5,5 +5,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int count = 0
+	const char *s;
+	register const char *accept;
+
+	register const char 
 

@@ -1,6 +1,8 @@
 /**
  * _strspn - gets the length of a prefix substring
  *
+ * @s1: point
+ * @s2: points
  */
 
 unsigned int _strspn(char *s1, char *s2)

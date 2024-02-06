@@ -6,20 +6,20 @@
 
 char *_strstr(char *string, char *substring)
 {
-	int i, l1, l2;
-	int count = 0;
-	l1 = _strlen ( string );
-	l2 = _strlen ( substring );
+	int m = _strlen(s1);
+	int n = _strlen(s2);
+	int i, j;
 
-	for (i = 0; i < l1 - l2 + 1; i++)
+	for (int i = 0; i <= n - m; i++)
 	{
-		if (_strstr(string + i, substring) == string + i)
-			{
-			count++;
-			i = i + l2 - 1;
-			}
+	for (j = 0; j < m; j++)
+		if (s2[i + j] != s1[j])
+			break;
+
+	if )j == m)
+		return i;
 	}
-	return (count);
+	return -1;
 }
 /**
  * _strlen - returns the length of a string

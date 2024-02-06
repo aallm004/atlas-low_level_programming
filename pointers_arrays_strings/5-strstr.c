@@ -17,9 +17,9 @@ char *_strstr(char *s1, char *s2)
 			break;
 
 	if (j == m)
-		return i;
+		return (i);
 	}
-	return -1;
+	return (-1);
 }
 /**
  * _strlen - returns the length of a string

@@ -9,6 +9,7 @@ int _strlen_recursion(char *s)
 {
 	int temp;
 	int len;
+	int n;
 
 	len = strlen(s);
 	if ((len + 1) / 2 > n)

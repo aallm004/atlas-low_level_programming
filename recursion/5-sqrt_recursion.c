@@ -26,5 +26,5 @@ int _sqrt_recursion_worker(int a, int b)
 		return (b);
 	}
 	else
-		return (_sqrt_recursion(a, b + 1));
+		return (_sqrt_recursion_worker(a, b + 1));
 }

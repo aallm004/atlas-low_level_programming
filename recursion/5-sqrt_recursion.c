@@ -5,6 +5,7 @@ int _sqrt_recursion_worker(int a, int b);
 /**
  * _sqrt_recursion - extra for int?
  *
+ *@n: int
  * Return: n, 0
  */
 
@@ -14,7 +15,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt_recursion_worker - function that returns the natural square of num
+ * _sqrt_recursion_worker - function that returns the natural square of num
  *
  * @a: int
  * @b: int

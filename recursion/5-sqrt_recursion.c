@@ -3,12 +3,9 @@
 int _sqrt_recursion_worker(int a, int b);
 
 /**
- * _sqrt_recursion - function that returns natural square root of a number
+ * _sqrt_recursion_worker - extra for int?
  *
- * _sqrt_recursion_worker - extra funtion
- * @n: root
- * @a: bla
- * @b: bla
+ * Return: n, 0
  */
 
 int _sqrt_recursion(int n)
@@ -16,7 +13,15 @@ int _sqrt_recursion(int n)
 	return (_sqrt_recursion_worker(n, 0));
 }
 
-int _sqrt_recursion_worker(int a, int b)
+/**
+ * sqrt_recursion - function that returns the natural square of num
+ *
+ * @a: int
+ * @b: int
+ *
+ * Return: -1, b
+ */
+
 {
 
 	if (b * b > a)

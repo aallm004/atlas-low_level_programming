@@ -3,7 +3,7 @@
 int _sqrt_recursion_worker(int a, int b);
 
 /**
- * _sqrt_recursion_worker - extra for int?
+ * _sqrt_recursion - extra for int?
  *
  * Return: n, 0
  */
@@ -14,14 +14,14 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt_recursion - function that returns the natural square of num
+ * sqrt_recursion_worker - function that returns the natural square of num
  *
  * @a: int
  * @b: int
  *
  * Return: -1, b
  */
-
+int _sqrt_recursion_worker(int a, int b)
 {
 
 	if (b * b > a)

@@ -18,18 +18,18 @@ int is_prime_number(int n)
  * @a: int
  * @b: int
  *
- * Return:
+ * Return: 1, 0
  */
 
 int is_prime_number_worker(int a, int b)
 {
  	if (b == a)
 	{
-		return (1);
+		return (0);
 	}
 	else if (b % a == 0)
-	{		
-		return (0);
+	{
+		return (1);
 	}
 	else
 	{

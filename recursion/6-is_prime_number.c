@@ -5,11 +5,16 @@ int is_prime_number_worker(int a, int b);
 /**
  * is_prime_number - is prime number or no
  *@n: int
+ *
+ * Return: 0, etc
  */
 
 int is_prime_number(int n)
 {
-	return (is_prime_number_worker(n, 0));
+	if (n <= 1)
+		return (0);
+	else
+		return (is_prime_number_worker(n, 0));
 }
 
 /**

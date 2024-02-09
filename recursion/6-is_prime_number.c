@@ -28,7 +28,7 @@ int is_prime_number(int n)
 
 int is_prime_number_worker(int a, int b)
 {
- 	if (b == a)
+	if (b == a)
 	{
 		return (0);
 	}

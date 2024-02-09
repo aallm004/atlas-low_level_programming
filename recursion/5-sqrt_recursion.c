@@ -9,16 +9,20 @@
 
 int _sqrt_recursion(int n)
 {
-	int i;
-	
-	if ((n * n) > i)
-	{
-		return (-1);
-	}
-	else if (( n * n) == i)
-	{
-		return (n);
-	}
-	else
-		return (_sqrt_recursion(i, n + 1));
+	return (_sqrt_recursion_worker(n, 0));
+}
+
+int _sqrt_recursion_worker(int a, int b)
+{
+
+        if (b * b > i)
+        {
+                return (-1);
+        }
+        else if (b * b == a)
+        {
+                return (b);
+        }
+        else
+                return (_sqrt_recursion(a, b + 1));
 }

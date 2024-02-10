@@ -5,7 +5,6 @@
  * main - Prints name
  * @argc: count
  * @argv: value
- * @i: int
  *
  * Return: Always 0 (always success)
  */

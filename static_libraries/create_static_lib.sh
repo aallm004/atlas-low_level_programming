@@ -1,4 +1,5 @@
 #!/bin/bash
 
-ar -t libmy.a
 gcc -c *.c
+ar -t libmy.a
+ranlib liball.a

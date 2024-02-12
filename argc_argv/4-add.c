@@ -12,7 +12,7 @@ int isnumber(char *ptr);
 
 int main(int argc, char *argv[])
 {
-        int i = 1;
+	int i = 1;
 	int res = 0;
 
 	for (; (i < argc); i++)
@@ -38,8 +38,8 @@ int main(int argc, char *argv[])
 
 int isnumber(char *ptr)
 {
-        while (*ptr)
-        {
+	while (*ptr)
+	{
 		if (!isdigit(*ptr))
 			return (0);
 		ptr++;

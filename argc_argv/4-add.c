@@ -4,7 +4,7 @@
 int isnumber(char *ptr);
 /**
  * main - program that adds positive numbers
- * @argv: count
+ * @argc: count
  * @argv: value
  *
  * Return: Always 0 (always success)

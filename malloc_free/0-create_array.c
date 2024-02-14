@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * create_array - function that creates string  of chars and init w spec char
+ * create_array - creating things
  *
  * @i: unsigned int
  * @array: pointer

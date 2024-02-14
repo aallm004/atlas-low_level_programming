@@ -4,9 +4,7 @@
 /**
  * create_array - creating things
  *
- * @i: unsigned int
- * @array: pointer
- * @size: size of array
+ * @size: size
  * @c: H
  *
  * Return: NULL array

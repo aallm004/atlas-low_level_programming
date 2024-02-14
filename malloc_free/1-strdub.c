@@ -9,21 +9,21 @@
  * Return: NULL str
  */
 
-char *_strdub(char *str)
+char *_strdup(char *str)
 {
 	int len = _strlen(str);
-	int i;
+	char *new;
 
-	if (strlen == 0)
+	if (len == 0)
 		return (NULL);
 
-	str = malloc(_strlen * str);
-		if (str == 0)
-			return (NULL);
+	new = malloc(len * sizeof(char));
+	if (new == NULL)
+		return (NULL);
 
-	for (i = 0; i < _strlen; i++)
-		str[i]
+	new = _strncpy(new, str, len);
 
+	return (new);
 }
 
 

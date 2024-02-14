@@ -2,10 +2,13 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * create_array - function that creates an array of chars and init w spec char
+ * create_array - function that creates string  of chars and init w spec char
  *
  * @i: unsigned int
  * @array: pointer
+ * @size: size of array
+ * @c: H
+ *
  * Return: NULL array
  */
 

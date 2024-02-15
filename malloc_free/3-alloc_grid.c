@@ -6,7 +6,6 @@
  *
  * @width: width
  * @height: height
- * @grid: pointer
  *
  * Return: Null, grid
  */

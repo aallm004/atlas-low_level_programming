@@ -27,11 +27,12 @@ char *str_concat(char *s1, char *s2)
 
 	con = _memset(con, '\0', (len1 + len2 + 1));
 
-	con = _strcpy(con, s1);
-	con = _strcpy(con, s2);
+	con = _strcat(_strcat(con, s1), s2);
 
 	return (con);
 }
+
+
 
 
 /**
@@ -56,7 +57,37 @@ char *_strcpy(char *dest, char *src)
 		return (dest);
 }
 
+/**
+ * _strcat - write a function that concatenates two stings
+ * @dest : destination
+ * @src : string
+ *
+ * Return: dest
+ */
 
+char *_strcat(char *dest, char *src)
+{
+	int a = 0, b = 0;
+
+	while (*dest)
+	{
+		dest++;
+		a++;
+	}
+
+	while (*src)
+	{
+		*dest = *src;
+		dest++;
+		a++;
+		src++;
+		b++;
+	}
+	*dest = '\0';
+	dest = (dest - a);
+
+	return (dest);
+}
 
 /**
  * _strlen - returns the length of a string

@@ -12,5 +12,6 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *_strcat(char *dest, char *src);
 int **alloc_grid(int width, int height);
+void free_grid(int **grid, int height);
 
 #endif

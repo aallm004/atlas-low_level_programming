@@ -6,7 +6,7 @@
  * @s1 - first string
  * @s2 - second string
  *
- * Return: 
+ * Return: NULL, con 
  */
 
 char *str_concat(char *s1, char *s2)

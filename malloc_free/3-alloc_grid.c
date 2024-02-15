@@ -6,6 +6,9 @@
  *
  * @width: width
  * @height: height
+ * @i: int
+ * @x: int
+ * @grid: pointer
  */
 
 int **alloc_grid(int width, int height)
@@ -13,13 +16,13 @@ int **alloc_grid(int width, int height)
 {
 
 	int **grid;
-	int i,x;
+	int i, x;
 
 	if (width * height == 0)
 		return (NULL);
 
 	grid = malloc(height * sizeof(int *));
-	
+
 	if (grid == NULL)
 		return (NULL);
 
@@ -38,7 +41,7 @@ int **alloc_grid(int width, int height)
 				for (x = 0; x < width; x++)
 				grid[i][x] = 0;
 	}
-	
+
 	return (grid);
 }
 

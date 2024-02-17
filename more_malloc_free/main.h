@@ -9,5 +9,6 @@ char *_strncat(char *dest, char *src, int n);
 int _strlen(char *s);
 char *_strcat(char *dest, char *src);
 int _fmin(int a, int b);
+void *_calloc(unsigned int nmemb, unsigned int size);
 
 #endif

@@ -10,5 +10,6 @@ int _strlen(char *s);
 char *_strcat(char *dest, char *src);
 int _fmin(int a, int b);
 void *_calloc(unsigned int nmemb, unsigned int size);
+int *array_range(int min, int max);
 
 #endif

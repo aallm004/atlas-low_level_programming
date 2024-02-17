@@ -5,6 +5,8 @@
  *_calloc - function that allocates memory for an array using malloc
  *@nmeb: how many you need
  *@size: number of elements
+ *
+ * Return: NULL, ptr
  */
 
 void *_calloc(unsigned int nmeb, unsigned int size)

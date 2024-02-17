@@ -31,6 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (con == NULL)
 		return (NULL);
 
+	con[0] = '\0';
 	con = _strcat(con, s1);
 	con = _strncat(con, s2, n);
 

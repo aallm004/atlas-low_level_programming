@@ -8,5 +8,6 @@ int *array_range(int min, int max);
 char *_strncat(char *dest, char *src, int n);
 int _strlen(char *s);
 char *_strcat(char *dest, char *src);
+int _fmin(int a, int b);
 
 #endif

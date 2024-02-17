@@ -26,7 +26,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 
-	con = malloc
+	con = malloc(len1 + _fmin(len2, n) + 1 * sizeof(char));
+	if (con == NULL)
+		return (NULL);
+
+	con = _strcat(con, s1);
+	con = _strncat(con, s2, n);
+
+	return (con);
 }
 
 
@@ -51,4 +58,91 @@ int _strlen(char *s)
 	}
 
 	return (x);
+}
+
+/**
+ * _strncat - write a function that concatenates two stings
+ * @dest : destination
+ * @src : string
+ * @n : end
+ *
+ * Return: dest
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	int a = 0;
+
+	while (*dest)
+	{
+		dest++;
+		a++;
+	}
+
+	while (*src && n > 0)
+	{
+		*dest = *src;
+		dest++;
+		a++;
+		src++;
+		n--;
+		if (n == 0)
+		{
+		break;
+		}
+	}
+
+	dest = (dest - a);
+
+	return (dest);
+}
+
+/**
+ * _fmin - find the minimum number
+ *
+ * @a: int
+ * @b: int
+ *
+ * Return: low number
+ *
+ */
+
+int _fmin(int a, int b)
+{
+	if (a < b)
+		return (a);
+
+	return (b);
+}
+
+/**
+ * _strcat - write a function that concatenates two stings
+ * @dest : destination
+ * @src : string
+ *
+ * Return: dest
+ */
+
+char *_strcat(char *dest, char *src)
+{
+	int a = 0, b = 0;
+
+	while (*dest)
+	{
+		dest++;
+		a++;
+	}
+
+	while (*src)
+	{
+		*dest = *src;
+		dest++;
+		a++;
+		src++;
+		b++;
+	}
+	*dest = '\0';
+	dest = (dest - a);
+
+	return (dest);
 }

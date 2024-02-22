@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src);
  * @age: age of new dog
  * @ownder: owner of new dog
  *
- * Return: NULL
+ * Return: dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)

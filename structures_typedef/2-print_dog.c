@@ -13,8 +13,8 @@ void print_dog(struct dog *d)
 {
 	if (d != NULL)
 		{
-			if (d->age != NULL)
-				printf("Age: %f\n", d->age);
+			if (d->age)
+				printf("Age: %.6f\n", d->age);
 			else
 				printf("Age: (nil)\n");
 			

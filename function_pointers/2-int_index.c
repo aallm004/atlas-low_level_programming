@@ -5,7 +5,7 @@
  * @array: array to be searched
  * @size: number of elements in array
  * @cmp: function ptr
- * 
+ *
  * Return: index of the first element, -1
  */
 

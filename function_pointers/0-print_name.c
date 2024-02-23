@@ -11,7 +11,7 @@
  * Return: nothing
  */
 
-void print_me(char *name, void (*f)(char *))
+void print_name(char *name, void (*f)(char *))
 {
 	f(name);
 }

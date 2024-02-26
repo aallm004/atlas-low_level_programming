@@ -14,7 +14,8 @@
 int main(int argc, char argv)
 {
 	int a, b;
-	
+	int *fonc(int, int);
+
 	if (argc != 4)
 	{
 		printf("Error\n")
@@ -30,7 +31,12 @@ int main(int argc, char argv)
 		printf("Error\n");
 		return (99);
 	}
-	
-	if (
 
+	if (((fonc == op_div) || (fonc == op_mod)) && b == 0)
+	{
+		printf("Error\n");
+		return (100);
+	}
+		printf("%d\n");
+		return (0);
 }

@@ -14,7 +14,7 @@
 int main(int argc, char **argv)
 {
 	int a, b;
-	int *fonc(int, int);
+	int (*fonc)(int, int);
 
 	if (argc != 4)
 	{
@@ -37,6 +37,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (100);
 	}
-		printf("%d\n", fonc(a, b));
-		return (0);
+	printf("%d\n", fonc(a, b));
+	return (0);
 }

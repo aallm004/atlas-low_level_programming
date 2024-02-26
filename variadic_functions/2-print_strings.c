@@ -2,9 +2,10 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_numbers - function that prints numbers, followed by new line
+ * print_strings - function that prints strings, followed by new line
  * @separator: string
  * @n: int
+ *
  * Return: nothing
  */
 

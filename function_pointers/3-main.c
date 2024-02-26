@@ -11,7 +11,7 @@
  * Return: 98, 99, 100
  */
 
-int main(int argc, char argv)
+int main(int argc, char **argv)
 {
 	int a, b;
 	int *fonc(int, int);

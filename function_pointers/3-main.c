@@ -37,6 +37,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (100);
 	}
-		printf("%d\n");
+		printf("%d\n", fonc(a, b));
 		return (0);
 }

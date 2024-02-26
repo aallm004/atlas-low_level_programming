@@ -50,7 +50,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_ - returns the remainder of a divided by b
+ * op_mod - returns the remainder of a divided by b
  * @a: int to be used in division
  * @b: int to be used in division
  * Return: int

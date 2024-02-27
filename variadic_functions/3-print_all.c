@@ -65,21 +65,21 @@ void print_all(const char * const format, ...)
 		{"f", print_f},
 		{"s", print_s},
 		{NULL, NULL}
-    };
+	};
 	int i = 0;
 	int x = 0;
 	char *p;
 
 	p = "";
 
-	va_start (ap, format);
+	va_start(ap, format);
 
 	while (format && format[i])
 	{
 		x = 0;
 		while ((ops[x].op))
-		{		
-			if(*(ops[x].op) == format[i])
+		{
+			if (*(ops[x].op) == format[i])
 			{
 				(ops[x].f)(ap, p);
 				p = ", ";
@@ -89,5 +89,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
-	va_end (ap);
+	va_end(ap);
 }

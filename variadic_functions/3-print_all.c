@@ -51,7 +51,6 @@ void print_s(va_list ap, char *c)
 
 /**
  * print_all - function that prints anything
- * @char: pointer
  * @format: format
  */
 

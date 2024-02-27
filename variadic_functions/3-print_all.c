@@ -7,9 +7,9 @@
  * @va_arg: returns value of the next argument in list
  *
  */
-void printc(va_list ap)
+void print_c(va_list ap, char *c)
 {
-printf("%c", (va_arg(ap, char)));
+printf("%s%c", c, (va_arg(ap, int)));
 }
 
 /**
@@ -17,9 +17,9 @@ printf("%c", (va_arg(ap, char)));
  * @va_arg: returns value of the next argument in list
  *
  */
-void printi(va_list ap)
+void print_i(va_list ap, char *c)
 {
-printf("%d", (va_arg(ap, int)));
+printf("%s%d", c, (va_arg(ap, int)));
 }
 
 /**
@@ -27,9 +27,9 @@ printf("%d", (va_arg(ap, int)));
  * @va_arg: returns value of the next argument in list
  *
  */
-void printf(va_list ap)
+void print_f(va_list ap, char *c)
 {
-printf("%f", (va_arg(ap, double)));
+printf("%s%f", c, (va_arg(ap, double)));
 }
 
 /**
@@ -37,9 +37,9 @@ printf("%f", (va_arg(ap, double)));
  * @va_arg: returns value of the next argument in list
  *
  */
-void prints(va_list ap)
+void print_s(va_list ap, char *c)
 {
-printf("%s", (va_arg(ap, char *)));
+printf("%s%s", c, (va_arg(ap, char *)));
 }
 
 /**
@@ -53,23 +53,34 @@ void print_all(const char * const format, ...)
 	va_list ap;
 
 	op_t ops[] = {
-		{"c", printc},
-		{"i", printi},
-		{"f", printf},
-		{"s", prints},
+		{"c", print_c},
+		{"i", print_i},
+		{"f", print_f},
+		{"s", print_s},
 		{NULL, NULL}
     };
 	int i = 0;
 	int x = 0;
+	char *p;
+
+	p = "";
+
+	va_start (ap, format);
 
 	while (format[i])
 	{
+		x = 0;
 		while ((ops[x].op))
 		{		
 			if(*(ops[x].op) == format[i])
-				(ops[x].f)(ap);
+			{
+				(ops[x].f)(ap, p);
+				p = ", ";
+			}
 			x++;
 		}
 		i++;
 	}
+	printf("\n");
+	va_end (ap);
 }

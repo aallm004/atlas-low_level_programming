@@ -9,7 +9,7 @@
  */
 void print_c(va_list ap, char *c)
 {
-printf("%s%c", c, (va_arg(ap, int)));
+	printf("%s%c", c, (va_arg(ap, int)));
 }
 
 /**
@@ -19,7 +19,7 @@ printf("%s%c", c, (va_arg(ap, int)));
  */
 void print_i(va_list ap, char *c)
 {
-printf("%s%d", c, (va_arg(ap, int)));
+	printf("%s%d", c, (va_arg(ap, int)));
 }
 
 /**
@@ -29,7 +29,8 @@ printf("%s%d", c, (va_arg(ap, int)));
  */
 void print_f(va_list ap, char *c)
 {
-printf("%s%f", c, (va_arg(ap, double)));
+
+	printf("%s%f", c, (va_arg(ap, double)));
 }
 
 /**
@@ -39,7 +40,13 @@ printf("%s%f", c, (va_arg(ap, double)));
  */
 void print_s(va_list ap, char *c)
 {
-printf("%s%s", c, (va_arg(ap, char *)));
+	char *s;
+
+	s = va_arg(ap, char *);
+	if (s == NULL)
+		s = "(nil)";
+
+	printf("%s%s", c, s);
 }
 
 /**

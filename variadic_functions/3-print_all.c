@@ -3,9 +3,9 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * op_printc - prints a char
- * @va_arg: returns value of the next argument in list
- *
+ * print_c - prints a char
+ * @ap: returns value of the next argument in list
+ * @c: pointer
  */
 void print_c(va_list ap, char *c)
 {
@@ -13,9 +13,9 @@ void print_c(va_list ap, char *c)
 }
 
 /**
- * op_printi - prints a integer
- * @va_arg: returns value of the next argument in list
- *
+ * print_i - prints a integer
+ * @ap: returns value of the next argument in list
+ * @c: pointer
  */
 void print_i(va_list ap, char *c)
 {
@@ -23,9 +23,9 @@ void print_i(va_list ap, char *c)
 }
 
 /**
- * op_printf - prints a float
- * @va_arg: returns value of the next argument in list
- *
+ * print_f - prints a float
+ * @ap: returns value of the next argument in list
+ * @c: pointer
  */
 void print_f(va_list ap, char *c)
 {
@@ -34,9 +34,9 @@ void print_f(va_list ap, char *c)
 }
 
 /**
- * op_print* - prints a pointer
- * @va_arg: returns value of the next argument in list
- *
+ * print_s - prints a pointer
+ * @ap: returns value of the next argument in list
+ *@c: pointer
  */
 void print_s(va_list ap, char *c)
 {

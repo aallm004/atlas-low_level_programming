@@ -12,7 +12,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node = NULL;
-	
+
 	if (head == NULL)
 		return (NULL);
 
@@ -62,7 +62,7 @@ char *_strcpyconst(char *dest, const char *src)
 }
 
 /**
- * _strlen - returns the length of a string
+ * _strlenconst - returns the length of a string
  *
  * @s : int
  *

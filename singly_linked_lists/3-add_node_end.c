@@ -21,7 +21,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new_node == NULL)
 		return (NULL);
 
-	new_node->str = malloc(_strlen(str) + 1);
+	new_node->str = malloc(_strlenconst(str) + 1);
 	if (new_node->str == NULL)
 	{
 		free(new_node->str);
@@ -79,7 +79,7 @@ char *_strcpyconst(char *dest, const char *src)
  * Return: the length of the string
  */
 
-int _strlen(char *s)
+int _strlenconst(const char *s)
 {
 	int x;
 

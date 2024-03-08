@@ -12,7 +12,8 @@ int pop_listint(listint_t **head)
 	listint_t *temp_node;
 	int n;
 
-	if (head != NULL)
+	if (head == NULL)
+	return (0);
 
 	while (head)
 	{

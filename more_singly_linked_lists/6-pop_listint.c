@@ -9,3 +9,14 @@
 
 int pop_listint(listint_t **head)
 
+	listint_t *temp_node;
+	int storage
+
+	while (head)
+	{
+	temp_node = head;
+	head
+	head = head->next;
+
+	}
+

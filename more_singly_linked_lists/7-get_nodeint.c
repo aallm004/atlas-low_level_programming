@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * get_nodeint - function that returns the nth node of a list
+ * get_nodeint_at_index - function that returns the nth node of a list
  *
  * @head: first element
+ * @index: index
  *
  * Return: nth node, NULL
  */

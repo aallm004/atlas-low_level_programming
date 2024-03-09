@@ -20,7 +20,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	new_node->n = n;
 
-	while (temp_node != NULL && pos < (idx - 1))
+	while (pos < idx - 1 && temp_node != NULL)
 	{
 		temp_node = temp_node->next;
 		pos++;

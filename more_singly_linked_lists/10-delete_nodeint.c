@@ -30,12 +30,12 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 
 	if (pos == index - 1)
-	{	
+	{
 		del_node = temp_node->next;
 		temp_node->next = del_node->next;
 		free(del_node);
 		return (1);
 	}
-	
+
 	return (-1);
 }

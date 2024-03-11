@@ -5,6 +5,8 @@
  * @n: pointer
  * @index: index
  *
+ * Return: 1, 0
+ *
  */
 
 int clear_bit(unsigned long int *n, unsigned int index)
@@ -23,7 +25,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	hole <<= index;
 
-	*n ^= hole;
+	*n ^= ~hole;
 
 		return (1);
 }

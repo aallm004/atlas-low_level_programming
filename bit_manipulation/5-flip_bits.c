@@ -20,8 +20,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if (res & 1)
 			res++;
-		comp >>= 1;
+		comp <<= 1;
 	}
 
-	return (1);
+	return (res);
 }

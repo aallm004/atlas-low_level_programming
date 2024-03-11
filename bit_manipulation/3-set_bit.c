@@ -24,7 +24,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	hole <<= index;
 
-	*n = hole;
+	*n |= hole;
 
 		return (1);
 }

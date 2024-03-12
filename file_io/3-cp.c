@@ -14,7 +14,7 @@ int all_in_the_name_OF_betty(void);
 
 int main(int argc, char *argv[])
 {
-	int fd_to, fd_from, Bread, Bwritten;
+	int fd_to, fd_from, Bwritten, Bread;
 	char buffer[BUF_SIZE];
 
 	if (argc != 3)

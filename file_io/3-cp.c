@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		while ((Bread = read(fd_from, buffer, BUF_SIZE)) > 0)
 		{
 			Bwritten = write(fd_to, buffer, Bread);
-				if (Bwritten == Bread)
+				if (Bwritten != Bread)
 				{
 					dprintf(STDERR_FILENO, "Error: Unable to write to %s\n", argv[2]);
 					close(fd_from);

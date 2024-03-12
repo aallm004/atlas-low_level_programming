@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Unable to read from file %s\n", argv[1]);
 		close(fd_from);
 		close(fd_to);
-		return (99);
+		return (98);
 	}
 
 	if (close(fd_from) == -1)

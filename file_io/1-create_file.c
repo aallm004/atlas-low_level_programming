@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 		return (0);
 
 	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-	
+
 	if (text_content == NULL)
 	{
 		close(fd);
@@ -24,9 +24,9 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	if (fd == -1)
-		return(-1);
+		return (-1);
 
-	for (i = 0; text_content[i]; i ++)
+	for (i = 0; text_content[i]; i++)
 	;
 
 	wr = write(fd, text_content, i);

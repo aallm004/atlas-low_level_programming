@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		while ((Bread = read(fd_from, buffer, BUF_SIZE)) > 0)
 		{
 			Bwritten = write(fd_to, buffer, Bread);
-				if (Bwritten == -1 || Bwritten != Bread)
+				if (Bwritten != Bread)
 				{
 					dprintf(STDERR_FILENO, "Error: Unable to write to %s\n", argv[2]);
 					close(fd_from);
@@ -61,7 +61,6 @@ int main(int argc, char *argv[])
 	if (close(fd_from) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Unable to close fd %d\n", fd_from);
-		close(fd_to);
 		return (100);
 	}
 

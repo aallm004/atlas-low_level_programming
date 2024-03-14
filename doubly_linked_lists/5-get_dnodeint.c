@@ -5,7 +5,7 @@
  *
  * @head: start of list
  * @index: where we are
- * 
+ *
  * Return: node or NULL
  *
  */

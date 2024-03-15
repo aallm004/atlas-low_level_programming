@@ -46,37 +46,24 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 }
 
 /**
- * add_dnodeint_end - function that adds new node at end of list
+ * dlistint_len - function that returns the number of elements in a lined list
  *
- * @head: start of list
- * @n: holds data
+ * @h: head
  *
- * Return: address of new element or NULL
+ * Return: number of nodes
  */
 
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+size_t dlistint_len(const dlistint_t *h)
 {
-	dlistint_t *new_node = NULL;
-	dlistint_t *temp_node;
+	int element_count = 0;
 
-	new_node = malloc(sizeof(dlistint_t));
-	if (new_node == NULL)
-		return (NULL);
+	if (h == NULL)
+		return (element_count);
 
-	new_node->n = n;
-	new_node->next = new_node->prev = NULL;
-
-	if (*head == NULL)
-		*head = new_node;
-	else
+	while (h)
 	{
-		temp_node = *head;
-		while (temp_node->next)
-			temp_node = temp_node->next;
-
-		temp_node->next = new_node;
-		new_node->prev = temp_node;
-
+		element_count++;
+		h = h->next;
 	}
-	return (new_node);
+	return (element_count);
 }

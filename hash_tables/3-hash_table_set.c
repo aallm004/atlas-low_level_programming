@@ -43,6 +43,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		(ht->array[index] = element);
 	else
 	{
+
 		element->next = ht->array[index];
 		ht->array[index] = element;
 	}
@@ -59,7 +60,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  * Return: 1, -1
  */
 
-int delete_nodeint_at_index(hash_node_t **head, char *key)
+int delete_nodeint_at_index(hash_node_t **head, const char *key)
 {
 	hash_node_t *temp_node = *head;
 	hash_node_t *del_node = NULL;

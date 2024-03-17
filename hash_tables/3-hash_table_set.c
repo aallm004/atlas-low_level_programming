@@ -51,6 +51,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 }
 
 
+/**
+ * delete_nodeint_at_index - deletes the node at index of linked list
+ *@head: first element
+ *@key: space
+ *
+ * Return: 1, -1
+ */
 
 int delete_nodeint_at_index(hash_node_t **head, char *key)
 {

@@ -49,3 +49,31 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	return (1);
 }
+
+
+
+int delete_nodeint_at_index(hash_node_t **head, char *key)
+{
+	hash_node_t *temp_node = *head;
+	hash_node_t *del_node = NULL;
+
+	if (*head == NULL)
+		return (-1);
+
+	while (temp_node != NULL)
+	{
+		if (strcmp(key, temp_node->key) == 0)
+			break;
+		temp_node = temp_node->next;
+	}
+
+	if (temp_node)
+	{
+		del_node = temp_node->next;
+		temp_node->next = del_node->next;
+		free(del_node);
+		return (1);
+	}
+
+	return (-1);
+}

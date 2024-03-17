@@ -38,9 +38,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	memcpy(element->key, key, strlen(key) + 1);
 	memcpy(element->value, value, strlen(value) + 1);
 
-	
-
-
-	
+	index = (djb2(element->key) % ht->size);
+	if (ht->array[index] == NULL)
+		ht->array[index] = element;
+	else
 
 }

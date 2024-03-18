@@ -16,29 +16,29 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 
+	index = key_index((const unsigned char *)key, ht->size);
+	if (ht->array[index])
+	{
+		element = ht->array[index];
+		while (element)
+		{
+			if (strcmp(element->key, key) == 0)
+			{
+				free(element->value);
+				element->value = strdup(value);
+				return (1);
+			}
+			element = element->next;
+		}
+	}
+
 	element = malloc(sizeof(hash_node_t));
 	if (element == NULL)
 		return (0);
 
-	element->key = malloc(strlen(key) + 1);
-	if (element->key == NULL)
-	{
-		free(element);
-		return (0);
-	}
+	element->key = strdup(key);
+	element->value = strdup(value);
 
-	element->value = malloc(strlen(value) + 1);
-	if (element->value == NULL)
-	{
-		free(element->key);
-		free(element);
-		return (0);
-	}
-
-	memcpy(element->key, key, strlen(key) + 1);
-	memcpy(element->value, value, strlen(value) + 1);
-
-	index = key_index((const unsigned char *)element->key, ht->size);
 	if (ht->array[index] == NULL)
 		(ht->array[index] = element);
 	else
@@ -48,39 +48,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 	return (1);
-}
-
-
-/**
- * delete_nodeint_at_index - deletes the node at index of linked list
- *@head: first element
- *@key: space
- *
- * Return: 1, -1
- */
-
-int delete_nodeint_at_index(hash_node_t **head, const char *key)
-{
-	hash_node_t *temp_node = *head;
-	hash_node_t *del_node = NULL;
-
-	if (*head == NULL)
-		return (-1);
-
-	while (temp_node != NULL)
-	{
-		if (strcmp(key, temp_node->key) == 0)
-			break;
-		temp_node = temp_node->next;
-	}
-
-	if (temp_node)
-	{
-		del_node = temp_node->next;
-		temp_node->next = del_node->next;
-		free(del_node);
-		return (1);
-	}
-
-	return (-1);
 }

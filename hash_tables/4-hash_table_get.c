@@ -1,11 +1,11 @@
 #include "hash_tables.h"
 /**
  * hash_table_get - function that retrieves a value associated with a key
- *@: ht: hash table
- *@: key: ze key
+ *@ht: hash table
+ *@key: ze key
  *
  * Return: value associated w element of NULL
- * 
+ *
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -19,7 +19,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (ht->array[index] != NULL)
 		element = ht->array[index];
-	
+
 	while (element)
 	{
 		if (strcmp(element->key, key) == 0)

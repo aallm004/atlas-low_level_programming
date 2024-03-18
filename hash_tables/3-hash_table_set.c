@@ -5,7 +5,7 @@
  * @key: ze key
  * @value: value
  *
- * Return: 1 if success, 0 if fail
+ *Return: 1 if success, 0 if fail
 */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)

@@ -29,5 +29,5 @@ unsigned long int index = 0;
 		}
 		index++;
 	}
-	free(ht);
+	free(*ht);
 }

@@ -59,7 +59,7 @@ int search(int *array, size_t size, size_t start, size_t end, int value)
  * Return: index
 */
 
-int print_array(int *array, size_t start, size_t end)
+void print_array(int *array, size_t start, size_t end)
 {
 	size_t x;
 

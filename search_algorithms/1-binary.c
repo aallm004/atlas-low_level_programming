@@ -27,10 +27,11 @@ int binary_search(int *array, size_t size, int value)
  */
 int search(int *array, size_t size, size_t start, size_t end, int value)
 {
-
 	size_t half;
 
 	half = ((start + end) / 2);
+
+	print_array(array, start, end);
 
 	if (!array)
 		return (-1);
@@ -46,4 +47,28 @@ int search(int *array, size_t size, size_t start, size_t end, int value)
 
 	else
 		return (search(array, size, 0, (half - 1), value));
+}
+
+/**
+ * print_array: prints the array
+ * 
+ * @array: new array
+ * @start: start of new array
+ * @end: end of new array
+ * 
+ * Return: index
+*/
+
+int print_array(int *array, size_t start, size_t end)
+{
+	size_t x;
+
+	for (x = start; x <= end; x++)
+	printf("%d", array[x]);
+
+	if (x != end)
+	printf(", ");
+
+	else
+	printf("\n");
 }

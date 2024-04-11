@@ -43,10 +43,10 @@ int search(int *array, size_t size, size_t start, size_t end, int value)
 		return (-1);
 
 	if (array[half] < value)
-		return (search(array, size, (half + 1), size, value));
+		return (search(array, (half + 1), end, value));
 
 	else
-		return (search(array, size, 0, (half - 1), value));
+		return (search(array, start, (half - 1), value));
 }
 
 /**

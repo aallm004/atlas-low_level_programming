@@ -37,8 +37,8 @@ int search(int *array, size_t size, size_t start, size_t end, int value)
 		return(half);
 
 	if (array[half] < value)
-		search(array, size, 0, (half - 1), value);
+		return(search(array, size, 0, (half - 1), value));
 
 	else
-		search(array, size, 0, (half + 1), value);
+		return(search(array, size, 0, (half + 1), value));
 }

@@ -51,11 +51,11 @@ int search(int *array, size_t size, size_t start, size_t end, int value)
 
 /**
  * print_array: prints the array
- * 
+ *
  * @array: new array
  * @start: start of new array
  * @end: end of new array
- * 
+ *
  * Return: index
 */
 

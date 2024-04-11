@@ -8,10 +8,10 @@
  *
  *Returns: -1, index of value
  *
- )*/
+ */
 int binary_search(int *array, size_t size, int value)
 {
-	return(search(array, size, 0, size, value));
+	return (search(array, size, 0, size, value));
 }
 
 /**
@@ -29,21 +29,21 @@ int search(int *array, size_t size, size_t start, size_t end, int value)
 {
 
 	size_t half;
-	
+
 	half = ((start + end) / 2);
 
 	if (!array)
 		return (-1);
 
 	if (half == 0)
-		return(-1);
+		return (-1);
 
 	if (array[half] == value)
-		return(half);
+		return (half);
 
 	if (array[half] < value)
-		return(search(array, size, 0, (half - 1), value));
+		return (search(array, size, 0, (half - 1), value));
 
 	else
-		return(search(array, size, 0, (half + 1), value));
+		return (search(array, size, 0, (half + 1), value));
 }

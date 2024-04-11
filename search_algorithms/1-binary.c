@@ -33,7 +33,7 @@ int search(int *array, size_t size, size_t start, size_t end, int value)
 	if (array == 0)
 		return (-1);
 
-	if (half = value)
+	if (array[half] == value)
 		return(half);
 
 	if (array[half] < value)
